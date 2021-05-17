@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -41,5 +42,18 @@ public class BrowserInit {
 		driver.get(url);
 
 	}
+	
+	public static String decodeStringUname(String username)
+	{
+		byte[] decodeString=Base64.decodeBase64(username);
+		return (new String(decodeString));
+	}
+	
+	public static String decodeStringPwd(String password)
+	{
+		byte[] decodeString=Base64.decodeBase64(password);
+		return (new String(decodeString));
+	}
+
 
 }

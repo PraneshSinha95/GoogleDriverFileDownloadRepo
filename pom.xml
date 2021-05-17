@@ -25,8 +25,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.3.1</version>
-			
+			<version>4.3.1</version>			
 		</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -36,6 +35,13 @@
     <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.11</version>
+		</dependency>
+
 		
   </dependencies>
 </project>

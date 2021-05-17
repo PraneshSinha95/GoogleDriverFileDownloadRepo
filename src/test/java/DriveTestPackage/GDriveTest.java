@@ -22,7 +22,8 @@ public class GDriveTest extends BrowserInit {
 	public void testGoogleDriveLogin() {
 		
 		try {
-			GoogleDriveFile.googleDriveLogin(prop.getProperty("username"), prop.getProperty("password"));
+			GoogleDriveFile.googleDriveLogin(decodeStringUname((prop.getProperty("username"))),
+					decodeStringPwd(prop.getProperty("password")));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
