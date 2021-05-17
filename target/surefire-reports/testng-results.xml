@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="DriveTestPackage.GDriveTest" duration-ms="13143" started-at="2021-05-14T01:35:00Z" finished-at="2021-05-14T01:35:13Z">
+  <suite name="DriveTestPackage.GDriveTest" duration-ms="41370" started-at="2021-05-14T08:24:08Z" finished-at="2021-05-14T08:24:50Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="13143" started-at="2021-05-14T01:35:00Z" finished-at="2021-05-14T01:35:13Z">
+    <test name="Command line test" duration-ms="41370" started-at="2021-05-14T08:24:08Z" finished-at="2021-05-14T08:24:50Z">
       <class name="DriveTestPackage.GDriveTest">
-        <test-method status="PASS" signature="testGoogleDriveLogin()[pri:1, instance:DriveTestPackage.GDriveTest@79517588]" name="testGoogleDriveLogin" duration-ms="3012" started-at="2021-05-14T01:35:00Z" finished-at="2021-05-14T01:35:03Z">
+        <test-method status="PASS" signature="testGoogleDriveLogin()[pri:1, instance:DriveTestPackage.GDriveTest@5a709816]" name="testGoogleDriveLogin" duration-ms="2329" started-at="2021-05-14T08:24:08Z" finished-at="2021-05-14T08:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleDriveLogin -->
-        <test-method status="PASS" signature="testPreview()[pri:2, instance:DriveTestPackage.GDriveTest@79517588]" name="testPreview" duration-ms="8860" started-at="2021-05-14T01:35:03Z" finished-at="2021-05-14T01:35:12Z">
+        <test-method status="PASS" signature="testPreview()[pri:2, instance:DriveTestPackage.GDriveTest@5a709816]" name="testPreview" duration-ms="38893" started-at="2021-05-14T08:24:11Z" finished-at="2021-05-14T08:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPreview -->
-        <test-method status="PASS" signature="testDownload()[pri:3, instance:DriveTestPackage.GDriveTest@79517588]" name="testDownload" duration-ms="1244" started-at="2021-05-14T01:35:12Z" finished-at="2021-05-14T01:35:13Z">
+        <test-method status="PASS" signature="testDownload()[pri:3, instance:DriveTestPackage.GDriveTest@5a709816]" name="testDownload" duration-ms="120" started-at="2021-05-14T08:24:50Z" finished-at="2021-05-14T08:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDownload -->
