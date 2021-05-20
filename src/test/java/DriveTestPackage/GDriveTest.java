@@ -7,7 +7,6 @@ package DriveTestPackage;
 
 import static org.testng.Assert.assertEquals;
 
-
 import org.testng.annotations.Test;
 import com.BaseClass.BrowserInit;
 import GoogleDriverPackage.GoogleDriveFile;
@@ -16,14 +15,14 @@ public class GDriveTest extends BrowserInit {
 	BrowserInit BrowserInit;
 	GoogleDriveFile GoogleDriveFile = new GoogleDriveFile();;
 
-
-
 	@Test(priority = 1)
 	public void testGoogleDriveLogin() {
-		
+
 		try {
-			GoogleDriveFile.googleDriveLogin(decodeStringUname((prop.getProperty("username"))),
-					decodeStringPwd(prop.getProperty("password")));
+			System.out.println(getEnvID());
+			System.out.println(getEnvPass());
+
+			GoogleDriveFile.googleDriveLogin(getEnvID(), getEnvPass());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

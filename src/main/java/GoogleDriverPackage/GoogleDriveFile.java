@@ -36,6 +36,12 @@ public class GoogleDriveFile extends BrowserInit {
 	@FindBy(xpath = "//div[@aria-label=\"Download\"]")
 	WebElement download;
 
+	@FindBy(xpath = "//div//iframe[@role=\\\"presentation\\\" ]")
+	WebElement iframe;
+
+	@FindBy(xpath = "//button[text()=\"Dismiss\"]")
+	WebElement dismiss;
+
 	// GoogleDriveFile is used here for initializing the elements
 	public GoogleDriveFile()
 
@@ -44,7 +50,7 @@ public class GoogleDriveFile extends BrowserInit {
 	}
 
 	// googleDriveLogin logins into the google drive with user name and password
-	public void googleDriveLogin(String username, String pass)  {
+	public void googleDriveLogin(String username, String pass) {
 		EmailId.sendKeys(username);
 		Submit.click();
 		wait.until(ExpectedConditions.visibilityOf(password));
@@ -53,9 +59,15 @@ public class GoogleDriveFile extends BrowserInit {
 	}
 
 	// preview finds the file and show user preview
+
 	public void preview() {
+		wait.until(ExpectedConditions.visibilityOf(dismiss));
+		driver.switchTo().frame(iframe);
+		dismiss.click();
+		driver.switchTo().parentFrame();
 		wait.until(ExpectedConditions.visibilityOf(FileName));
 		try {
+
 			FileName.click();
 			preview.click();
 		} catch (Exception NoSuchElementException) {
@@ -65,7 +77,7 @@ public class GoogleDriveFile extends BrowserInit {
 	}
 
 	// downloadFile downloads the required file
-	public void downloadFile() throws InterruptedException {
+	public void downloadFile() {
 
 		wait.until(ExpectedConditions.visibilityOf(download));
 		download.click();
